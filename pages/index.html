@@ -1,0 +1,34 @@
+<html><head>
+<title>toastmc.dev</title>
+<style>
+* {
+ color: white;
+ font-weight:bold;
+ font-family:'Comic Sans MS', Sans
+}
+p {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ min-height: 100vh;
+}
+</style>
+<script>
+var x=0,y=false;
+setInterval(function(){
+ document.body.style.background = "repeating-radial-gradient(circle,green 0px,purple " + x + "px)";
+ if (x>2) {
+  y = true;
+ } else if (x<0) {
+  y = false
+ }
+ x += y ? -0.001 : 0.001;
+}, 50);
+</script>
+</head><body>
+<p>toastmc.dev is the best anarchy server in australia<br>
+<iframe src="https://discordapp.com/widget?id=740023842042544159&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+</p>
+</body></html>
