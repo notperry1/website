@@ -1,35 +1,49 @@
 <html><head>
 <title>toastmc.dev</title>
 <style>
-* {
- color: white;
- font-weight:bold;
- font-family:'Comic Sans MS', Sans
-}
-.center {
- display: flex;
- flex-direction: column;
- justify-content: center;
- align-items: center;
- text-align: center;
- min-height: 100vh;
-}
-</style>
-<script>
-var x=0,y=false;
-setInterval(function(){
- document.body.style.background = "repeating-radial-gradient(circle,green 0px,purple " + x + "px)";
- if (x>2) {
-  y = true;
- } else if (x<0) {
-  y = false
+ * {
+  color: white;
+  font-weight:bold;
+  font-family:'Comic Sans MS', Sans
  }
- x += y ? -0.001 : 0.001;
-}, 50);
-</script>
+ html {
+  background-image: url(https://cdn.discordapp.com/attachments/660454068786954250/742743243053334619/2020-08-11_23.55.54.png);
+  background-attachment: fixed;
+  background-scale: cover;
+  background-position-x: center;
+ }
+ .center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+ }
+</style>
 </head><body>
 <div class=center>
 <p>toastmc.dev is the best anarchy server in australia</p>
+<p>The server is <t id=t><script>
+    var scr = document.currentScript.parentElement;
+    var begin = new Date('Aug 08 2020 19:14:00 GMT-0500');
+    setInterval(function() {
+        var x = new Date(Date.now() - begin),
+        y = x.getFullYear()-1970,
+        M = x.getMonth(),
+        d = x.getDate(),
+        h = x.getHours(),
+        m = x.getMinutes(),
+        s = x.getSeconds()
+        scr.innerText =
+            (y > 0 ? (y + " year"   + (y > 1 ? "s" : "")) + (s+m+h+d+M>0 ? "," : "") : "") + " "
+          + (M > 0 ? (M + " month"  + (M > 1 ? "s" : "")) + (s+m+h+d>0   ? "," : "") : "") + " "
+          + (d > 0 ? (d + " day"    + (d > 1 ? "s" : "")) + (s+m+h>0     ? "," : "") : "") + " "
+          + (h > 0 ? (h + " hour"   + (h > 1 ? "s" : "")) + (s+m>0       ? "," : "") : "") + " "
+          + (m > 0 ? (m + " minute" + (m > 1 ? "s" : "")) + (s>0         ? "," : "") : "") + " "
+          + (s > 0 ? (s + " second" + (s > 1 ? "s" : ""))                            : "") + " "
+    }, 1000);
+</script></t> old</p>
 <iframe src="https://discordapp.com/widget?id=740023842042544159&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
 </div>
 </body></html>
