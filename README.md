@@ -5,8 +5,8 @@ https://toastmc.dev
 
 docker container rm web    
         
-docker run -d --name web -p 80:80 -p 443:443
-\ --mount type=bind,source=/srv/web/pages,target=/usr/share/nginx/html,readonly 
+docker run -d --name web -p 80:80 -p 443:443    
+\ --mount type=bind,source=/srv/web/pages,target=/usr/share/nginx/html,readonly     
 \ --mount type=bind,source=/srv/web/config,target=/etc/nginx nginx  
           
 docker container exec web apt-get update                
