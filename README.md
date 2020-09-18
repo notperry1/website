@@ -1,8 +1,7 @@
 # Toastmc.dev Website
-[Toastmc.dev](https://toastmc.dev) development group, website repo. Started and Maintained by RemainingToast
-
+Website for the toastmc development group. Started and Maintained by RemainingToast  
+You can goto either the [localhost website](http://localhost:8080/index.html) or the [dedicated website](https://toastmc.dev)
 # Docker Remake Commands:
-
 How to remake the docker in case it fucks up.
 ```
    docker container rm web  
