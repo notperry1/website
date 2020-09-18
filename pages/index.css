@@ -1,0 +1,7 @@
+.banner {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url("gallery/indexbackground.png") fixed;
+    background-size: cover;
+}
